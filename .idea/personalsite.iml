@@ -30,7 +30,6 @@
     <orderEntry type="library" scope="PROVIDED" name="mail (v2.3.0, RVM: ruby-1.9.2-p180 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack-cache (v1.0.3, RVM: ruby-1.9.2-p180 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack-ssl (v1.3.2, RVM: ruby-1.9.2-p180 [global]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="sqlite3 (v1.3.5, RVM: ruby-1.9.2-p180 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="warden (v1.1.1, RVM: ruby-1.9.2-p180 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="devise (v1.5.3, RVM: ruby-1.9.2-p180 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="activeresource (v3.1.1.rc1, RVM: ruby-1.9.2-p180 [global]) [gem]" level="application" />
@@ -38,6 +37,7 @@
     <orderEntry type="library" scope="PROVIDED" name="jquery-rails (v1.0.19, RVM: ruby-1.9.2-p180 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="thor (v0.14.6, RVM: ruby-1.9.2-p180 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="i18n (v0.6.0, RVM: ruby-1.9.2-p180 [global]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="pg (v0.11.0, RVM: ruby-1.9.2-p180 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="uglifier (v1.2.3, RVM: ruby-1.9.2-p180 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="railties (v3.1.1.rc1, RVM: ruby-1.9.2-p180 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="activemodel (v3.1.1.rc1, RVM: ruby-1.9.2-p180 [global]) [gem]" level="application" />
