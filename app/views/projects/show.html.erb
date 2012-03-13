@@ -1,0 +1,71 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @project.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @project.description %>
+</p>
+<p>
+<%= image_tag @project.image.url(:medium) %>
+</p>
+<% @project.questions.each do |question| %>
+    <% if question.answer %>
+    <div id="question">
+    <b> Question: </b> <%= question.question %> <br/>
+    <b> Answer: </b> <%= question.answer %>
+
+  </div>
+
+   <% elsif current_user %>
+   <b> Question: </b> <%= question.question %> <br/>
+   <%= form_for question do |form_question| %>
+            <div class="field">
+              <%= form_question.label :answer %><br />
+              <%= form_question.text_area :answer,:rows => 4 %>
+            </div>
+           <div class="actions">
+    <%= form_question.submit %>
+  </div>
+
+   <% end %>
+  <% end %>
+<% end %>
+
+<div id="question_form">
+<%= form_for @question do |f| %>
+  <% if @question.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@question.errors.count, "error") %> prohibited this project from being saved:</h2>
+
+      <ul>
+      <% @project.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :question %><br />
+    <%= f.text_area :question, :rows => 2 %>
+  </div>
+
+  <div class = "field">
+      <%= f.hidden_field :project_id %>
+    </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+  </div>
+
+<div id="admin_panel">
+
+
+</div>
+<%= link_to 'Edit', edit_project_path(@project) %> |
+<%= link_to 'Back', projects_path %>
