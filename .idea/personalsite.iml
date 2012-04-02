@@ -19,11 +19,11 @@
     <orderEntry type="library" scope="PROVIDED" name="hike (v1.2.1, RVM: ruby-1.9.2-p180 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ansi (v1.4.2, RVM: ruby-1.9.2-p180 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="activesupport (v3.1.1.rc1, RVM: ruby-1.9.2-p180 [global]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="turn (v0.9.3, RVM: ruby-1.9.2-p180 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="actionmailer (v3.1.1.rc1, RVM: ruby-1.9.2-p180 [global]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="turn (v0.9.3, RVM: ruby-1.9.2-p180 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="erubis (v2.7.0, RVM: ruby-1.9.2-p180 [global]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="rack-cache (v1.0.3, RVM: ruby-1.9.2-p180 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack-ssl (v1.3.2, RVM: ruby-1.9.2-p180 [global]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rack-cache (v1.0.3, RVM: ruby-1.9.2-p180 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sqlite3 (v1.3.5, RVM: ruby-1.9.2-p180 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="thin (v1.2.11, RVM: ruby-1.9.2-p180 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="warden (v1.1.1, RVM: ruby-1.9.2-p180 [global]) [gem]" level="application" />
@@ -55,10 +55,10 @@
     <orderEntry type="library" scope="PROVIDED" name="activemodel (v3.1.1.rc1, RVM: ruby-1.9.2-p180 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="builder (v3.0.0, RVM: ruby-1.9.2-p180 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="multi_json (v1.1.0, RVM: ruby-1.9.2-p180 [global]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="rdoc (v3.12, RVM: ruby-1.9.2-p180 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="coffee-rails (v3.1.1, RVM: ruby-1.9.2-p180 [global]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="coffee-script-source (v1.2.0, RVM: ruby-1.9.2-p180 [global]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rdoc (v3.12, RVM: ruby-1.9.2-p180 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="tzinfo (v0.3.32, RVM: ruby-1.9.2-p180 [global]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="coffee-script-source (v1.2.0, RVM: ruby-1.9.2-p180 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="treetop (v1.4.10, RVM: ruby-1.9.2-p180 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack-mount (v0.8.3, RVM: ruby-1.9.2-p180 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="cocaine (v0.2.1, RVM: ruby-1.9.2-p180 [global]) [gem]" level="application" />

@@ -29,10 +29,10 @@ margin:0 auto;
 }
 #logo p{
     color:#FFFFFF;
-    font-size: large;
+    font-size: 30px;
     font-weight:bold;
     margin-left:20px;
-
+    padding-top: 20px;
     text-decoration:none;
 }
 /*------------------*/
@@ -48,11 +48,25 @@ line-height:26px;
     margin-right:20px;
     text-decoration:none;
 }
-#int-site{background:url(rails.png) left top no-repeat;
+#int-site{background:url() left top no-repeat;
     height:166px;}
+#blog{
+    border-bottom: 1px solid;
+    border-bottom-color: black;
+}
+#blog_title{
+    font-size: larger;
+    font-weight: bolder;
+}
+#blog_date{
+    float: right;
 
+}
 
-
+#blog_post{
+    padding-top: .5em;
+    padding-bottom: 1em;
+}
 .hoverbox
 {
 	cursor: default;

@@ -1,0 +1,16 @@
+<div id ="blog">
+  <div id="blog_date">
+    <%= blog.created_at.strftime("%d %b. %Y") %>
+  </div>
+  <div id="blog_title">
+    <%= blog.title %>
+  </div>
+
+  <div id="blog_post">
+  <%= blog.post %>
+  </div>
+
+  <% if current_user %>
+  <%= link_to 'Destroy', blog, confirm: 'Are you sure?', method: :delete %> </br>
+ <% end %>
+</div>
