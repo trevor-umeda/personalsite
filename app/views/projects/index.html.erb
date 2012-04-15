@@ -2,15 +2,20 @@
 
 
   <ul class="hoverbox">
-
+<% if user_signed_in? %>
 <% @projects.in_groups_of(3,false) do |row_project| %>
     <% for project in row_project %>
 
             <li>
 
         <%= project.name %> </br>
+     <% if project.image_link_url %>
+              <a href= <%= project_path(project) %>><img src=<%= project.image_link_url %> alt="description" /><img src= <%= project.image_link_url %> alt="description" class="preview" /></a>
+      <%= link_to image_tag(project.image_link_url,:class => 'preview' ), project %>
+     <% else %>
 <a href= <%= project_path(project) %>><img src=<%= project.image.url %> alt="description" /><img src= <%= project.image.url %> alt="description" class="preview" /></a>
       <%= link_to image_tag(project.image.url,:class => 'preview' ), project %>
+                 <% end %>
         </br>
             <%= link_to 'Edit', edit_project_path(project) %>
     <%= link_to 'Destroy', project, confirm: 'Are you sure?', method: :delete %> </br>
@@ -21,6 +26,10 @@
       </ul>
 
 <br />
+<% else %>
+ <p>Under Construction</p>
+ <% end %>
+
 
  <% if user_signed_in? %>
     <%= link_to 'New Project', new_project_path %>

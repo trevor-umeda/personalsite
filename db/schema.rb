@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120402230629) do
+ActiveRecord::Schema.define(:version => 20120415053212) do
 
   create_table "blogs", :force => true do |t|
     t.text     "post"
@@ -30,6 +30,7 @@ ActiveRecord::Schema.define(:version => 20120402230629) do
     t.string   "image_content_type"
     t.integer  "image_file_size"
     t.datetime "image_updated_at"
+    t.string   "image_link_url"
   end
 
   create_table "questions", :force => true do |t|

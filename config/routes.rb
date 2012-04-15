@@ -11,7 +11,8 @@ Personalsite::Application.routes.draw do
 
   resources :projects
   resources :questions
-  resources :blogs
+  resources :blogs, :except => :index
+  match '/blog' => "blogs#index"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

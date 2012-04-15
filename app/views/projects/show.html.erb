@@ -10,7 +10,11 @@
   <%= @project.description %>
 </p>
 <p>
+  <% if %>
+<%= image_tag @project.image_link_url %>
+      <% else %>
 <%= image_tag @project.image.url(:medium) %>
+      <% end %>
 </p>
 <% @project.questions.each do |question| %>
     <% if question.answer %>
