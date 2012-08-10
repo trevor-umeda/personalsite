@@ -10,7 +10,7 @@
   <%= @project.description %>
 </p>
 <p>
-  <% if %>
+  <% if @project.image_link_url %>
 <%= image_tag @project.image_link_url %>
       <% else %>
 <%= image_tag @project.image.url(:medium) %>

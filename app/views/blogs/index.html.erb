@@ -26,6 +26,14 @@
     <%= f.label :post %><br />
     <%= f.text_area :post, :rows => 9 %>
   </div>
+  <div class="field">
+    <%= f.label :tag %><br />
+    <input id="tag_name" name="tag_name" type="text" /> </br>
+
+    <%= f.collection_select(:tag_id, Tag.all, :id,:name, {:prompt => 'Select Tag'},:style => "width: 175px") %>
+
+
+  </div>
 
   <div class="actions">
     <%= f.submit %>

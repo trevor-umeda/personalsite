@@ -9,7 +9,15 @@
   <div id="blog_post">
   <%= blog.post %>
   </div>
+  <div id="tag_id">
+    <% if blog.tag_id %>
+        Tag:
+    <%= blog.tag.name %>
+    <% else %>
+    No Tag
+    <% end %>
 
+  </div>
   <% if current_user %>
   <%= link_to 'Destroy', blog, confirm: 'Are you sure?', method: :delete %> </br>
  <% end %>

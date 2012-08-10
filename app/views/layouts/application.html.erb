@@ -3,7 +3,9 @@
 <head>
   <title>Site of Trevor Umeda</title>
   <%= stylesheet_link_tag    "application" %>
-  <%= javascript_include_tag "application" %>
+  <%= javascript_include_tag 'jquery-1.6.3.min', 'application' %>
+  <%= javascript_include_tag "rails" %>
+
   <%= csrf_meta_tags %>
 </head>
 <body>
@@ -13,8 +15,17 @@
 </div>
 
 <div id="int-site-container">
+  <div id ="left_column">
+    <% if @tags %>
+        Tags: </br>
+    <%= render @tags  %>
+
+    <% end %>
+  </div>
     <div id="int-site">
         <%= yield %>
+      <%= debug(params) if Rails.env.development? %>
+
     </div>
 </div>
 

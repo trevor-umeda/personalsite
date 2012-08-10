@@ -16,7 +16,6 @@ padding:0;
 #navbar-container{background: #000000;}
 #int-site-container{
 /*background:url(../images/rails.png) left top repeat-x;*/
-    padding-top: 10px;
     height:200px;
 }
 #navbar, #int-site{
@@ -51,8 +50,18 @@ line-height:26px;
     margin-right:20px;
     text-decoration:none;
 }
+#left_column{
+    float:left;
+padding-left: 1em;
+padding-bottom: 1em;
+width: 14em;
+
+}
 #int-site{background:url() left top no-repeat;
-    height:166px;}
+    float: right;
+    height:166px;
+    padding-right: 11em;
+}
 #blog{
     border-bottom: 1px solid;
     border-bottom-color: black;
