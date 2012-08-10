@@ -14,10 +14,7 @@ padding:0;
 }
 
 #navbar-container{background: #000000;}
-#int-site-container{
-/*background:url(../images/rails.png) left top repeat-x;*/
-    height:200px;
-}
+
 #navbar, #int-site{
 width:800px;
 margin:0 auto;
@@ -50,6 +47,11 @@ line-height:26px;
     margin-right:20px;
     text-decoration:none;
 }
+#int-site-container{
+/*background:url(../images/rails.png) left top repeat-x;*/
+    height:200px;
+    padding-top: 2em;
+}
 #left_column{
     float:left;
 padding-left: 1em;
@@ -61,6 +63,9 @@ width: 14em;
     float: right;
     height:166px;
     padding-right: 11em;
+}
+#projects{
+ padding-top: 2em;
 }
 #blog{
     border-bottom: 1px solid;
