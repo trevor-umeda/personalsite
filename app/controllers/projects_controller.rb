@@ -3,7 +3,7 @@ class ProjectsController < ApplicationController
   # GET /projects.json
   def index
     @projects = Project.all
-
+    @question = Question.new
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @projects }

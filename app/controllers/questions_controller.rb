@@ -1,14 +1,16 @@
 class QuestionsController < ApplicationController
   def create
     @question = Question.new(params[:question])
-    @project = @question.project
+    @project = Project.find(@question.project_id)
     respond_to do |format|
       if @question.save
         format.html { redirect_to @project, notice: 'Question Successfully Posted.' }
         format.json { render json: @project, status: :created, location: @project }
+        format.js
       else
         format.html { render project_path(@project) }
         format.json { render json: @question.errors, status: :unprocessable_entity }
+        format.js
       end
     end
   end

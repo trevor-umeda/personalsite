@@ -1,0 +1,19 @@
+<% if question.answer %>
+    <div id="question">
+    <b> Question: </b> <%= question.question %> <br/>
+    <b> Answer: </b> <%= question.answer %>
+    </div>
+
+   <% elsif current_user %>
+   <b> Question: </b> <%= question.question %> <br/>
+   <%= form_for question do |form_question| %>
+            <div class="field">
+              <%= form_question.label :answer %><br />
+              <%= form_question.text_area :answer,:rows => 4 %>
+            </div>
+           <div class="actions">
+    <%= form_question.submit %>
+  </div>
+
+   <% end %>
+  <% end %>

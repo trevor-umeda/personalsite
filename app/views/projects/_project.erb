@@ -1,0 +1,55 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= project.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= project.description %>
+</p>
+<p>
+  <% if project.image_link_url %>
+<%= image_tag project.image_link_url %>
+      <% else %>
+<%= image_tag project.image.url(:medium) %>
+      <% end %>
+</p>
+<div id="questions">
+  <%= render project.questions %>
+</div>
+
+<div id="question_form">
+<%= form_for @question,:remote => true do |f| %>
+  <% if @question.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@question.errors.count, "error") %> prohibited this project from being saved:</h2>
+
+      <ul>
+      <% @project.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :question %><br />
+    <%= f.text_area :question, :rows => 2 %>
+  </div>
+
+  <div class = "field">
+      <%= f.hidden_field :project_id, :value => project.id %>
+    </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+  </div>
+<div id="admin_panel">
+
+
+</div>
+<%= link_to 'Edit', edit_project_path(project) %> |
+<%= link_to 'Back', projects_path %>

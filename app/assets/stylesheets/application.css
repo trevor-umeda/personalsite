@@ -11,12 +11,20 @@
  * {
 margin:0;
 padding:0;
+
 }
+html {
+margin:0;
+padding:0;
+color:#000;
 
+}
 #navbar-container{background: #000000;}
-
+#wrap{
+    width: 800px;
+    margin:0 auto;
+}
 #navbar, #int-site{
-width:800px;
 margin:0 auto;
 }
 /*------------------*/
@@ -54,16 +62,20 @@ line-height:26px;
 }
 #left_column{
     float:left;
-padding-left: 1em;
-padding-bottom: 1em;
-width: 14em;
+    padding-bottom: 1em;
+    width: 8em;
+    padding-left: 2em;
 
 }
-#int-site{background:url() left top no-repeat;
+#int-site{
+//background:url() left top no-repeat;
     float: right;
-    height:166px;
-    padding-right: 11em;
-    border-left: 1px solid;
+
+    width:600px;
+
+}
+#footer {
+clear:both;
 }
 #projects{
  padding-top: 2em;
@@ -80,7 +92,6 @@ width: 14em;
     float: right;
 
 }
-
 #blog_post{
     padding-top: .5em;
     padding-bottom: 1em;
@@ -90,7 +101,6 @@ width: 14em;
 	cursor: default;
 	list-style: none;
 }
-
 .hoverbox a
 {
 	cursor: default;
