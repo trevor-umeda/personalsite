@@ -74,8 +74,8 @@ class ProjectsController < ApplicationController
   # DELETE /projects/1.json
   def destroy
     @project = Project.find(params[:id])
+    @project.image_link_url = ""
     @project.destroy
-
     respond_to do |format|
       format.html { redirect_to projects_url }
       format.json { head :ok }
