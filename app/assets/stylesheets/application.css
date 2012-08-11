@@ -63,6 +63,7 @@ width: 14em;
     float: right;
     height:166px;
     padding-right: 11em;
+    border-left: 1px solid;
 }
 #projects{
  padding-top: 2em;

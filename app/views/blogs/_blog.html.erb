@@ -12,7 +12,7 @@
   <div id="tag_id">
     <% if blog.tag_id %>
         Tag:
-    <%= blog.tag.name %>
+    <%= link_to blog.tag.name, url_for(:tag => blog.tag.id),:remote => true %>
     <% else %>
     No Tag
     <% end %>
