@@ -18,8 +18,11 @@
       <%= link_to image_tag(project.image.url,:class => 'preview' ), project %>
                  <% end %>
         </br>
+              <% if user_signed_in? %>
+
             <%= link_to 'Edit', edit_project_path(project) %>
     <%= link_to 'Destroy', project, confirm: 'Are you sure?', method: :delete %> </br>
+                  <% end %>
             </li>
 
      <% end %>
@@ -28,7 +31,6 @@
 
 <br />
 
- <p>Under Construction</p>
 
 
     </div></br>
