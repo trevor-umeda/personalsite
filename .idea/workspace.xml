@@ -8,7 +8,7 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/images/2/medium/maproblem.jpg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/images/2/original/maproblem.jpg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/images/2/thumb/maproblem.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/projects/index.html.erb" afterPath="$PROJECT_DIR$/app/views/projects/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/projects/_project.erb" afterPath="$PROJECT_DIR$/app/views/projects/_project.erb" />
     </list>
     <ignored path="personalsite.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,10 +30,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/projects/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="92" selection-start="645" selection-end="645" vertical-scroll-proportion="0.7118644">
+            <state line="14" column="92" selection-start="645" selection-end="645" vertical-scroll-proportion="-8.75">
               <folding />
             </state>
           </provider>
@@ -57,10 +57,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_project.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="_project.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/projects/_project.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="59" selection-start="954" selection-end="954" vertical-scroll-proportion="-26.25">
+            <state line="13" column="48" selection-start="227" selection-end="227" vertical-scroll-proportion="0.6101695">
               <folding />
             </state>
           </provider>
@@ -126,8 +126,8 @@
         <option value="$PROJECT_DIR$/app/views/questions/create.js.erb" />
         <option value="$PROJECT_DIR$/app/views/projects/show.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/questions_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/projects/_project.erb" />
         <option value="$PROJECT_DIR$/app/views/projects/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/projects/_project.erb" />
       </list>
     </option>
   </component>
@@ -902,13 +902,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/projects/_project.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="59" selection-start="954" selection-end="954" vertical-scroll-proportion="-26.25">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/projects_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="28" selection-start="158" selection-end="158" vertical-scroll-proportion="0.0">
@@ -928,7 +921,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/projects/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="92" selection-start="645" selection-end="645" vertical-scroll-proportion="0.7118644">
+        <state line="14" column="92" selection-start="645" selection-end="645" vertical-scroll-proportion="-8.75">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/projects/_project.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="48" selection-start="227" selection-end="227" vertical-scroll-proportion="0.6101695">
           <folding />
         </state>
       </provider>
