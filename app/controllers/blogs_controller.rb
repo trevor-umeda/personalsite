@@ -9,7 +9,13 @@ class BlogsController < ApplicationController
         @tag = Tag.find(params[:tag])
       @blogs = @tag.blogs
     else
-      @blogs = Blog.all(:order => "created_at DESC")
+      @tag = Tag.find_by_name("Life")
+      if @tag
+        @blogs = @tag.blogs
+      else
+        @blogs = Blog.all(:order => "created_at DESC")
+      end
+
     end
 
     respond_to do |format|
