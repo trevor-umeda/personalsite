@@ -1,11 +1,13 @@
 <div id ="blog_description">
    <%= @tag.description %>
 </div>
+<% if user_signed_in? %>
+
 <div id ="tag_form">
-  <% if user_signed_in? %>
 <%=  render "tags/form" %>
-      <% end %>
+
 </div>
+<% end %>
 <div id="blog_list">
 <%= render @blogs %>
 </div>
