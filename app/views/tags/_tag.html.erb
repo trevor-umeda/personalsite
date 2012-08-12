@@ -1,6 +1,6 @@
 <div id ="tag">
   <div id="tag_name">
-    <%= link_to tag.name ,url_for(:tag => tag.id),:remote => true %>
+    <%= link_to get_tag_name(tag) ,url_for(:tag => tag.id),:remote => true %>
   </div>
 
 </div>
