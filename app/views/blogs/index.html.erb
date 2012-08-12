@@ -1,19 +1,9 @@
 <div id ="blog_description">
    <%= @tag.description %>
 </div>
-<div id ="tag form">
+<div id ="tag_form">
   <% if user_signed_in? %>
-  <%= form_for @tag, :remote => true do |tag|%>
-        <div class="field">
-          <%= tag.label :description %><br />
-          <%= tag.text_area :description, :rows => 2 %>
-        </div>
-
-        <div class="actions">
-          <%= tag.submit %>
-        </div>
-
-  <% end %>
+<%=  render "tags/form" %>
       <% end %>
 </div>
 <div id="blog_list">
