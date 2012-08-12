@@ -80,6 +80,15 @@ clear:both;
 #projects{
  padding-top: 2em;
 }
+#blog_description{
+    padding-bottom: 20px;
+    font-size: larger;
+    font-weight: bolder;
+
+}
+#blog_tags{
+    padding-top: 20px;
+}
 #blog{
     border-bottom: 1px solid;
     border-bottom-color: black;
