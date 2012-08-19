@@ -8,12 +8,16 @@ class BlogsController < ApplicationController
     if params[:tag]
         @tag = Tag.find(params[:tag])
       @blogs = @tag.blogs
+        @blogs.sort!{|a,b| b.created_at <=> a.created_at}
+
     else
       @tag = Tag.find_by_name("Life")
       if @tag
-        @blogs = @tag.blogs
+        @blogs = @tag.blogs.order(:created_at)
+        @blogs.sort!{|a,b| b.created_at <=> a.created_at}
+
       else
-        @blogs = Blog.all(:order => "created_at DESC")
+        @blogs = Blog.all
       end
 
     end

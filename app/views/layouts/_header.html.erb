@@ -1,14 +1,17 @@
 <div id="logo">
   <p> Trevor Umeda</p>
 </div>
+
 <div id="navbar-container">
+  <div id="nav_overlay" class="nav_overlay"></div>
 <div id="navbar">
+  <ul id="nav_menu">
   <% if current_user %>
       <%= link_to "Sign out", destroy_user_session_path, :action => :delete %>
   <% end %>
   <%= link_to "About", about_path %>
   <%= link_to "Portfolio", projects_path %>
   <%= link_to "Blog", '/blog' %>
-
+</ul>
 </div>
 </div>
