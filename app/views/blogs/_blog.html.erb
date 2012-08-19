@@ -7,7 +7,7 @@
   </div>
 
   <div id="blog_post">
-  <%= blog.post %>
+  <%= h(blog.post).gsub(/\n/, '<br/>').html_safe %>
   </div>
   <div id="tag_id">
     <% if blog.tag_id %>
