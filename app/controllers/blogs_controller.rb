@@ -9,13 +9,13 @@ class BlogsController < ApplicationController
         @tag = Tag.find(params[:tag])
       @blogs = @tag.blogs
         @blogs.sort!{|a,b| b.created_at <=> a.created_at}
-
+        @blog.tag_id = @tag.id
     else
       @tag = Tag.find_by_name("Life")
       if @tag
         @blogs = @tag.blogs.order(:created_at)
         @blogs.sort!{|a,b| b.created_at <=> a.created_at}
-
+        @blog.tag_id = @tag.id
       else
         @blogs = Blog.all
       end
@@ -33,17 +33,20 @@ class BlogsController < ApplicationController
     puts "Updating a blog"
     if params[:tag_name] != ""
       if !Tag.find_by_name(params[:tag_name])
-      @newTag = Tag.create(:name => params[:tag_name])
-      @blog.tag_id = @newTag.id
+        @newTag = Tag.create(:name => params[:tag_name])
+        @blog.tag_id = @newTag.id
       end
     end
      respond_to do |format|
       if @blog.save
-        format.html { redirect_to "/blog", notice: 'Project was successfully created.' }
+        @tag_id = @blog.tag_id
+        format.html { redirect_to :controller => "blogs",:action=>"index",:tag => @tag_id }
         format.json { render json: @blog, status: :created, location: @blog }
+        format.js
       else
         format.html { render action: "index" }
         format.json { render json: @blog.errors, status: :unprocessable_entity }
+        format.js
       end
     end
 
