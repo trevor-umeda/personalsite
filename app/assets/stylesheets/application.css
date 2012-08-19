@@ -97,6 +97,8 @@ clear:both;
 #blog{
     border-bottom: 1px solid;
     border-bottom-color: black;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
 }
 #blog_title{
     font-size: larger;
