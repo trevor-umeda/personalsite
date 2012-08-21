@@ -83,6 +83,7 @@ line-height:26px;
     position:relative;
     	padding:0 240px;
     background: url("sitebg.jpg") top repeat-y;
+    background-size: 100%;
 
 }
 #right_column{
