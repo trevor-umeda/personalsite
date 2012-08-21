@@ -9,11 +9,11 @@
 </head>
 <body>
 <div id="wrap">
-<div id="header">
+<div id="header" class="shadow">
   <%= render "layouts/header" %>
 
 </div>
-
+<div id="body-wrapper">
 <div id="int-site-container">
   <div id ="left_column">
     <div id="blog_tags">
@@ -24,13 +24,21 @@
     </div>
 
   </div>
-    <div id="int-site">
-        <%= yield %>
-      <%= debug(params) if Rails.env.development? %>
-
+  <div id="right_column">
+    <div id="additional_contact">
+      additional contact
+      <%= link_to "Facebook","http://www.facebook.com/trevor.umeda" %>
     </div>
-</div>
 
+  </div>
+  <div id="int-site">
+    <%= yield %>
+    <%= debug(params) if Rails.env.development? %>
+
+  </div>
+
+</div>
+</div>
 
 <div id="footer">
 

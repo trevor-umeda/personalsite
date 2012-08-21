@@ -8,20 +8,18 @@
 
 /* Reset Body Property */
 
- * {
-margin:0;
-padding:0;
-
-}
 html {
 margin:0;
 padding:0;
-color:#000;
+
+background: #000;
 
 }
+
 #wrap{
-    width: 800px;
+
     margin:0 auto;
+           background-size: 100%;
 }
 #navbar, #int-site{
 margin:0 auto;
@@ -29,9 +27,14 @@ margin:0 auto;
 /*------------------*/
 /* LOGO */
 #logo{
-    height:54px;
-    background:#000000 left top;
+    height:150px;
+    backround: #000;
 
+}
+#header{
+    background: url("siteheader.jpg") no-repeat;
+        background-size: 100%;
+    background-position: -12px 0px;
 }
 #logo p{
     color:#FFFFFF;
@@ -49,36 +52,49 @@ line-height:26px;
 }
 
 #navbar-container{
-    background:#000;
 
 }
 
 #navbar a:link, #navbar a:visited, #navbar a:hover{
     float: right;
-    color:#FFFFFF;
+    color:#000;
     font-weight:bold;
     margin-right:20px;
     text-decoration:none;
 }
 #int-site-container{
 /*background:url(../images/rails.png) left top repeat-x;*/
-    height:200px;
-    padding-top: 2em;
+    background-size: 100%;
+
 }
 #left_column{
-    float:left;
-    padding-bottom: 1em;
-    width: 8em;
-    padding-left: 2em;
+    position:relative;
+    	top:-10px;
+    	float:left;
+    	width:220px;  /* for IE5/WIN */
+
+    	width:200px; /* actual value */
+    	margin:0 0 -10px 0;
+    	padding:10px;
+    	z-index:100;
 
 }
+
 #int-site{
-//background:url() left top no-repeat;
-    float: right;
-
-    width:600px;
+    position:relative;
+    	padding:0 240px;
+    background: url("sitebg.jpg") top repeat-y;
 
 }
+#right_column{
+    position:relative;
+    	float:right;
+    	width:200px; /* actual value */
+    	margin:0 0 -10px 0;
+    	padding:10px;
+    	z-index:99;
+}
+
 #footer {
 clear:both;
 }
