@@ -34,7 +34,6 @@ margin:0 auto;
 #header{
     background: url("siteheader.jpg") no-repeat;
         background-size: 100%;
-    background-position: -12px 0px;
 }
 #logo p{
     color:#FFFFFF;
