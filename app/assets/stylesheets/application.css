@@ -17,9 +17,10 @@ background: #000;
 }
 
 #wrap{
-
+    width: 900px;
     margin:0 auto;
            background-size: 100%;
+    background: #000;
 }
 #navbar, #int-site{
 margin:0 auto;
@@ -28,7 +29,6 @@ margin:0 auto;
 /* LOGO */
 #logo{
     height:150px;
-    backround: #000;
 
 }
 #header{
@@ -54,12 +54,15 @@ line-height:26px;
 
 }
 
-#navbar a:link, #navbar a:visited, #navbar a:hover{
+#navbar a:link, #navbar a:visited{
     float: right;
     color:#000;
     font-weight:bold;
     margin-right:20px;
     text-decoration:none;
+}
+#navbar a:hover{
+  background-color:#FFFFFF;
 }
 #int-site-container{
 /*background:url(../images/rails.png) left top repeat-x;*/
