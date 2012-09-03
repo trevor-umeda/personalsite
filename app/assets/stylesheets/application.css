@@ -101,7 +101,9 @@ line-height:26px;
 }
 
 #footer {
-clear:both;
+    background: url("sitebg.jpg") top repeat-y;
+        background-size: 100%;
+    padding-top: 50px;
 }
 #projects{
  padding-top: 2em;
