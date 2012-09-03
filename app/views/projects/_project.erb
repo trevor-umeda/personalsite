@@ -11,7 +11,7 @@
 </p>
 <p>
   <% if project.image_link_url && project.image_link_url != "" %>
-      <%= image_tag project.image_link_url,:size =>"600x600" %>
+      <%= image_tag project.image_link_url, :class => "main_image"%>
 
       <% else %>
 <%= image_tag project.image.url(:medium) %>
