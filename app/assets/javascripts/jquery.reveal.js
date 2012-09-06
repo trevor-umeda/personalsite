@@ -68,24 +68,26 @@
 				if(!locked) {
 					lockModal();
 					if(options.animation == "fadeAndPop") {
-						modal.css({'top': $(document).scrollTop()-topOffset, 'opacity' : 0, 'visibility' : 'visible'});
+						modal.css({'top': $(document).scrollTop()-topOffset, 'opacity' : 0,'display': 'inline'});
 						modalBG.fadeIn(options.animationspeed/2);
 						modal.delay(options.animationspeed/2).animate({
 							"top": $(document).scrollTop()+topMeasure + 'px',
 							"opacity" : 1
-						}, options.animationspeed,unlockModal());					
+						}, options.animationspeed,unlockModal());
+
+
 					}
 					if(options.animation == "fade") {
-						modal.css({'opacity' : 0, 'visibility' : 'visible', 'top': $(document).scrollTop()+topMeasure});
+						modal.css({'opacity' : 0, 'visibility' : 'visible','display': 'visible', 'top': $(document).scrollTop()+topMeasure});
 						modalBG.fadeIn(options.animationspeed/2);
 						modal.delay(options.animationspeed/2).animate({
 							"opacity" : 1
 						}, options.animationspeed,unlockModal());					
 					} 
 					if(options.animation == "none") {
-						modal.css({'visibility' : 'visible', 'top':$(document).scrollTop()+topMeasure});
-						modalBG.css({"display":"block"});	
-						unlockModal()				
+						modal.css({'visibility' : 'visible','display': 'visible', 'top':$(document).scrollTop()+topMeasure});
+						modalBG.css({"display":"block"});
+						unlockModal()
 					}
 				}
 				modal.unbind('reveal:open');
@@ -101,7 +103,7 @@
 							"top":  $(document).scrollTop()-topOffset + 'px',
 							"opacity" : 0
 						}, options.animationspeed/2, function() {
-							modal.css({'top':topMeasure, 'opacity' : 1, 'visibility' : 'hidden'});
+							modal.css({'top':topMeasure, 'opacity' : 1, 'display': 'none'});
 							unlockModal();
 						});					
 					}  	

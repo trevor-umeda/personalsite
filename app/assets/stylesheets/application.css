@@ -13,10 +13,14 @@ margin:0;
 padding:0;
 
 background: #000;
+height: 1000px;
+
 
 }
 body {
     background-color: #000;
+    padding-bottom: 20px;
+
 }
 #wrap{
     width: 900px;
@@ -67,37 +71,23 @@ line-height:26px;
   background-color:#FFFFFF;
 }
 #int-site-container{
-/*background:url(../images/rails.png) left top repeat-x;*/
     background-size: 100%;
-
 }
 #left_column{
-    position:relative;
-    	top:-10px;
-    	float:left;
-    	width:220px;  /* for IE5/WIN */
-
-    	width:200px; /* actual value */
-    	margin:0 0 -10px 0;
-    	padding:10px;
-    	z-index:100;
-
+    top:-10px;
+    float:left;
+    width:220px;  /* for IE5/WIN */
+    width:200px; /* actual value */
+    margin:0 0 -10px 0;
+    padding:10px;
+    z-index:100;
 }
 
 #int-site{
-    position:relative;
-    	padding:0 240px;
+  	padding:0 240px;
     background: url("sitebg.jpg") top repeat-y;
     background-size: 100%;
 
-}
-#right_column{
-    position:relative;
-    	float:right;
-    	width:200px; /* actual value */
-    	margin:0 0 -10px 0;
-    	padding:10px;
-    	z-index:99;
 }
 
 #footer {
@@ -129,14 +119,12 @@ line-height:26px;
 }
 #blog_date{
     float: right;
-
 }
 #blog_post{
     padding-top: .5em;
     padding-bottom: 1em;
 }
-.hoverbox
-{
+.hoverbox{
 	cursor: default;
 	list-style: none;
 }
@@ -145,13 +133,11 @@ line-height:26px;
 	cursor: default;
 }
 
-.hoverbox a .preview
-{
+.hoverbox a .preview{
 	display: none;
 }
 
-.hoverbox a:hover .preview
-{
+.hoverbox a:hover .preview{
 	display: block;
 	position: absolute;
 	top: -33px;
@@ -159,8 +145,7 @@ line-height:26px;
 	z-index: 1;
 }
 
-.hoverbox img
-{
+.hoverbox img{
 	background: #fff;
 	border-color: #aaa #ccc #ddd #bbb;
 	border-style: solid;
@@ -172,8 +157,7 @@ line-height:26px;
 	height: 75px;
 }
 
-.hoverbox li
-{
+.hoverbox li{
 	background: #eee;
 	border-color: #ddd #bbb #aaa #ccc;
 	border-style: solid;
