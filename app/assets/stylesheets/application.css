@@ -98,6 +98,9 @@ line-height:26px;
 #projects{
  padding-top: 2em;
 }
+.project_images img{
+    width:520px;
+}
 #blog_description{
     padding-bottom: 20px;
     font-size: larger;

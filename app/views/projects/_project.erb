@@ -10,12 +10,14 @@
   <%= project.description %>
 </p>
 <p>
+  <div class="project_images">
   <% if project.image_link_url && project.image_link_url != "" %>
       <%= image_tag project.image_link_url, :class => "main_image"%>
 
       <% else %>
 <%= image_tag project.image.url(:medium) %>
       <% end %>
+  </div>
 </p>
 <div id="questions">
   <%= render project.questions %>
