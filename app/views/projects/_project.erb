@@ -7,7 +7,7 @@
 </div>
 <p>
   <b>Description:</b>
-  <%= project.description %>
+  <%= h(project.description).gsub(/\n/, '<br/>').html_safe %>
 </p>
 <p>
   <div class="project_images">
