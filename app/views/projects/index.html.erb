@@ -7,7 +7,7 @@
                 <div id=<%= project.id %> class="reveal-modal">
                   <%= render project %>
                 </div>
-    <% end %>
+
               <ul class="hoverbox">
                 <li>
         <%= project.name %> </br>
@@ -28,10 +28,10 @@
     <%= link_to 'Destroy', project, confirm: 'Are you sure?', method: :delete %> </br>
                   <% end %>
             </li>
+              </ul>
 
-
+     <% end %>
 <% end %>
-      </ul>
 
 <br />
 
