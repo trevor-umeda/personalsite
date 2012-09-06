@@ -98,7 +98,7 @@ line-height:26px;
 #projects{
  padding-top: 2em;
 }
-.project_images img{
+img.main_image{
     width:520px;
 }
 #blog_description{
