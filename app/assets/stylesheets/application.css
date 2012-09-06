@@ -98,6 +98,9 @@ line-height:26px;
 #projects{
  padding-top: 2em;
 }
+#project_name p{
+    font-size: large;
+}
 img.main_image{
     width:520px;
 }

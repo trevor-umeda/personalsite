@@ -12,10 +12,10 @@
                 <li>
         <%= project.name %> </br>
      <% if project.image_link_url && project.image_link_url != "" %>
-    <a href="#"  data-reveal-id=<%= project.id %>> <img src=<%= project.image_link_url %> /><img src= <%= project.image_link_url %> alt="description" class="preview" /></a>"
+    <a href="#"  data-reveal-id=<%= project.id %>> <img src=<%= project.image_link_url %> /><img src= <%= project.image_link_url %> alt="description" class="preview" /></a>
      <%= link_to image_tag(project.image_link_url,:class => 'preview' ), project %>
      <% elsif project.image_file_name %>
-<a href="#"  data-reveal-id=<%= project.id %>> <img src=<%= project.image.url %> alt="description" /><img src= <%= project.image.url %> alt="description" class="preview" /></a>"
+<a href="#"  data-reveal-id=<%= project.id %>> <img src=<%= project.image.url %> alt="description" /><img src= <%= project.image.url %> alt="description" class="preview" /></a>
       <%= link_to image_tag(project.image.url,:class => 'preview' ), project %>
 
        <% else %>
