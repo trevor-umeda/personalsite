@@ -39,7 +39,7 @@ margin:0 auto;
 }
 #header{
     background: url("siteheader.jpg") no-repeat;
-        background-size: 100%;
+    background-size: 100%;
 }
 #logo p{
     color:#FFFFFF;
@@ -97,6 +97,12 @@ line-height:26px;
 }
 #projects{
  padding-top: 2em;
+ margin-left: -10em;
+ width: 700px;
+
+}
+#projects h1{
+    margin-left: 10em;
 }
 #project_name p{
     font-size: large;
