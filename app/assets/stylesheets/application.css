@@ -94,12 +94,13 @@ line-height:26px;
     background: url("sitebg.jpg") top repeat-y;
         background-size: 100%;
     padding-top: 50px;
+
 }
 #projects{
  padding-top: 2em;
  margin-left: -10em;
  width: 700px;
-
+ padding-bottom: 200px;
 }
 #projects h1{
     margin-left: 10em;
