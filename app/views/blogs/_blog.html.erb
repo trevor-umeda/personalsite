@@ -19,6 +19,7 @@
 
   </div>
   <% if current_user %>
+  <%= link_to 'Edit', edit_blog_path(blog) %>
   <%= link_to 'Destroy', blog, confirm: 'Are you sure?', method: :delete %> </br>
  <% end %>
 </div>

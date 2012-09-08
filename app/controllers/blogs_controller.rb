@@ -51,7 +51,20 @@ class BlogsController < ApplicationController
     end
 
   end
+  def edit
+    @blog = Blog.find(params[:id])
+  end
+  def update
+    @blog = Blog.find(params[:id])
+    respond_to do |format|
+      if @blog.update_attributes(params[:blog])
+      format.html {redirect_to "/blog" }
 
+      else
+        format.html
+      end
+    end
+  end
   def destroy
     @blog = Blog.find(params[:id])
     @blog.destroy
