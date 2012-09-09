@@ -6,8 +6,8 @@
     <%= blog.title %>
   </div>
 
-  <div id="blog_post">
-  <%= h(blog.post).gsub(/\n/, '<br/>').html_safe %>
+  <div id="created_blog_post">
+  <%= raw(blog.post) %>
   </div>
   <div id="tag_id">
     <% if blog.tag_id %>

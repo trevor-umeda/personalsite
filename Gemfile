@@ -1,6 +1,7 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.1.1.rc1'
+gem 'rails', '3.2.1'
+
 gem "paperclip", "~> 2.7"
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
@@ -18,11 +19,11 @@ gem 'devise'
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails', "  ~> 3.1.0"
-  gem 'coffee-rails', "~> 3.1.0"
+  gem "sass-rails", "~> 3.2.4"
+  gem "coffee-rails", "~> 3.2.2"
   gem 'uglifier', '>= 1.0.3'
 end
-
+gem 'tinymce-rails','>=3.5.6'
 gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
