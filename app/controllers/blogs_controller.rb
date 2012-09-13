@@ -7,8 +7,8 @@ class BlogsController < ApplicationController
     @blog = Blog.new
     if params[:tag]
         @tag = Tag.find(params[:tag])
-      @blogs = @tag.blogs
-        @blogs.sort!{|a,b| b.created_at <=> a.created_at}
+        #@blogs.sort!{|a,b| b.created_at <=> a.created_at}
+        #@blogs.paginate(:page => 5, :per_page => 5)
         @blog.tag_id = @tag.id
     else
       @tag = Tag.find_by_name("Life")

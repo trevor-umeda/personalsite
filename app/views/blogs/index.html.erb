@@ -5,14 +5,18 @@
 
 <div id ="tag_form">
 <%=  render "tags/form" %>
-
 </div>
+<%= link_to "New Post", "#new_link_anchor" %>
 <% end %>
+<div id="pagination">
+  <%= will_paginate @tag.blogs.paginated(params[:page]) %>
+</div>
 <div id="blog_list">
-<%= render @blogs %>
+  <%= render :partial => "blogs/blog" , :collection => @tag.blogs.paginated(params[:page]) %>
 </div>
 <br>
 <% if current_user %>
+    <a name="new_link_anchor"></a> </br>
     <div id="new_blog_form">
     <%= render "blogs/form" %>
     </div>

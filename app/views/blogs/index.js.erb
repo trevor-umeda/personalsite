@@ -1,4 +1,5 @@
-$("#blog_list").html("<%= escape_javascript(render @blogs) %>");
+$("#pagination").html("<%= escape_javascript(will_paginate @tag.blogs.paginated(params[:page])) %>");
+$("#blog_list").html("<%= escape_javascript(render :partial => "blogs/blog" , :collection => @tag.blogs.paginated(params[:page])) %>");
 $("#blog_description").html("<%= @tag.description %>");
 $("#tag_form").html("<%= escape_javascript(render "tags/form") %>");
 $("#new_blog_form").html("<%= escape_javascript(render "blogs/form") %>");
