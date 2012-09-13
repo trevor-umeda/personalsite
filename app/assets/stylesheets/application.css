@@ -137,6 +137,9 @@ img.main_image{
     padding-top: .5em;
     padding-bottom: 1em;
 }
+#pagination{
+    padding-bottom:2em;
+}
 .hoverbox{
 	cursor: default;
 	list-style: none;
