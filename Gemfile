@@ -23,7 +23,7 @@ group :assets do
   gem "coffee-rails", "~> 3.2.2"
   gem 'uglifier', '>= 1.0.3'
 end
-gem 'tinymce-rails','>=3.5.6'
+gem 'tinymce-rails','>= 3.5.6'
 gem 'jquery-rails'
 gem 'will_paginate', '~> 3.0'
 # To use ActiveModel has_secure_password
