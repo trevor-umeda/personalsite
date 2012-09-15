@@ -23,7 +23,9 @@
       <% end %>
   </div>
 </p>
-<div id="questions">
+<% div_id = "questions_#{project.id}" -%>
+
+<div id="<%= div_id -%>">
   <%= render project.questions %>
 </div>
 

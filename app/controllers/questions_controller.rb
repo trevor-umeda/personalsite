@@ -27,5 +27,15 @@ class QuestionsController < ApplicationController
         format.json { render json: @project.errors, status: :unprocessable_entity }
       end
     end
+ end
+  def destroy
+    @question = Question.find(params[:id])
+       @question.destroy
+
+       respond_to do |format|
+         format.html { redirect_to "/projects" }
+         format.json { head :ok }
+       end
   end
+
 end

@@ -5,6 +5,8 @@
     </div>
    <% elsif current_user %>
    <b> Question: </b> <%= question.question %> <%= question.id %><br/>
+    <%= link_to 'Destroy', question, confirm: 'Are you sure?', method: :delete %> </br>
+
    <%= form_for question do |form_question| %>
             <div class="field">
               <%= form_question.label :answer %><br />

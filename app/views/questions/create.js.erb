@@ -1,1 +1,2 @@
-$("#questions").html("<%= escape_javascript(render @project.questions) %>");
+var projectId = <%= @project.id %>
+$("#questions_"+projectId).html("<%= escape_javascript(render @project.questions) %>");
