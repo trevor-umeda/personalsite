@@ -1,11 +1,10 @@
 <% if question.answer %>
     <div id="question">
     <b> Question: </b> <%= question.question %> <br/>
-    <b> Answer: </b> <%= question.answer %>
+    <b> Answer: </b> <%= h(question.answer).gsub(/\n/, '<br/>').html_safe %>
     </div>
-
    <% elsif current_user %>
-   <b> Question: </b> <%= question.question %> <br/>
+   <b> Question: </b> <%= question.question %> <%= question.id %><br/>
    <%= form_for question do |form_question| %>
             <div class="field">
               <%= form_question.label :answer %><br />

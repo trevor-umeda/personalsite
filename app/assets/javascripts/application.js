@@ -8,7 +8,6 @@
 //= require jquery_ujs
 //= require_tree .
 //= require tinymce
-//= require tinymce-jquery
 
 
 
