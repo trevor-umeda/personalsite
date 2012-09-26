@@ -1,0 +1,2 @@
+var movieId = <%= @movie.id %>
+$("#movies_"+movieId).html("<%= escape_javascript(ratings_for @movie,current_user) %>");

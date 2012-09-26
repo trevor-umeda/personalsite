@@ -4,6 +4,6 @@ class AddDescriptionToBlogs < ActiveRecord::Migration
     end
 
     def self.down
-      remove_column :tagss, :title, :text
+      remove_column :tags, :title, :text
     end
 end

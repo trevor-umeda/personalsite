@@ -111,6 +111,9 @@ line-height:26px;
 img.main_image{
     width:520px;
 }
+#movies{
+    padding-top:2em;
+}
 #blog_description{
     padding-bottom: 20px;
     font-size: larger;
@@ -140,6 +143,7 @@ img.main_image{
 #pagination{
     padding-bottom:2em;
 }
+
 .hoverbox{
 	cursor: default;
 	list-style: none;

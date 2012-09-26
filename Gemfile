@@ -26,6 +26,8 @@ end
 gem 'tinymce-rails','>= 3.5.6'
 gem 'jquery-rails'
 gem 'will_paginate', '~> 3.0'
+gem 'ajaxful_rating', :git => 'git://github.com/edgarjs/ajaxful-rating.git', :branch => "rails3"
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 

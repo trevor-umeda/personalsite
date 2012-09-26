@@ -22,6 +22,7 @@
     <orderEntry type="library" scope="PROVIDED" name="activerecord (v3.2.1, RVM: ruby-1.9.2-p180 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="activeresource (v3.2.1, RVM: ruby-1.9.2-p180 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="activesupport (v3.2.1, RVM: ruby-1.9.2-p180 [global]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="ajaxful_rating (v3.0.0.beta8, RVM: ruby-1.9.2-p180 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ansi (v1.4.3, RVM: ruby-1.9.2-p180 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="arel (v3.0.2, RVM: ruby-1.9.2-p180 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bcrypt-ruby (v3.0.1, RVM: ruby-1.9.2-p180 [global]) [gem]" level="application" />
