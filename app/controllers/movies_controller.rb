@@ -18,6 +18,19 @@ class MoviesController < ApplicationController
           end
         end
   end
+  def edit
+    @movie = Movie.find(params[:id])
+  end
+  def update
+    @movie = Movie.find(params[:id])
+    respond_to do |format|
+          if @movie.update_attributes(params[:movie])
+            format.html {redirect_to movies_path }
+          else
+            format.html
+          end
+        end
+  end
   def rate
       @movie = Movie.find(params[:id])
       @movie.rate(params[:stars],@movie)
@@ -25,8 +38,5 @@ class MoviesController < ApplicationController
         format.js
 
       end
-  end
-  def update
-
   end
 end

@@ -4,6 +4,7 @@
 <h3><%= movie.name %></h3>
 <%= raw(movie.description) %>
 </div>
+<%= link_to "Edit Movie", edit_movie_path(movie) %>
 <div id="<%= div_movie_id -%>">
 <%= ratings_for movie,current_user %>
  </div>
