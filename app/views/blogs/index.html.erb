@@ -1,7 +1,7 @@
 <div id ="blog_description">
    <%= @tag.description %>
 </div>
-<% if user_signed_in? %>
+<% if admin? %>
 
 <div id ="tag_form">
 <%=  render "tags/form" %>
@@ -15,7 +15,7 @@
   <%= render :partial => "blogs/blog" , :collection => @tag.blogs.paginated(params[:page]) %>
 </div>
 <br>
-<% if current_user %>
+<% if admin? %>
     <a name="new_link_anchor"></a> </br>
     <div id="new_blog_form">
     <%= render "blogs/form" %>
