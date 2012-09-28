@@ -1,10 +1,23 @@
 
-<% div_movie_id = "movies_#{movie.id}" -%>
+
 <div id="movie_info">
-<h3><%= movie.name %></h3>
-<%= raw(movie.description) %>
+  <h3><%= movie.name %></h3>
+  <% movie.reviews.each do |review| %>
+      <div id='review'>
+Review by: <%= review.user.username %>
+<%= raw(review.description) %>
+      <% div_movie_id = "movies_#{movie.id}_#{review.user_id}" -%>
+      <div id="<%= div_movie_id -%>">
+      <%= ratings_for movie, review.user, :show_user_rating => true  %>
+      </div>
+      </div>
+  <% end %>
+  <% if current_user && !movie.has_review(current_user.id) %>
+   <%= link_to "Review this",{:controller => 'reviews',:action =>'new',:movie => movie.id} %>
+  <% elsif current_user && movie.has_review(current_user.id) %>
+     <%= link_to "Edit Movie", edit_movie_path(movie) %>
+      </br>
+
+  <% end %>
+
 </div>
-<%= link_to "Edit Movie", edit_movie_path(movie) %>
-<div id="<%= div_movie_id -%>">
-<%= ratings_for movie,current_user %>
- </div>

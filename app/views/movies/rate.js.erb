@@ -1,2 +1,3 @@
 var movieId = <%= @movie.id %>
-$("#movies_"+movieId).html("<%= escape_javascript(ratings_for @movie,current_user) %>");
+var userId = <%= current_user.id %>
+$("#movies_"+movieId+"_"+userId).html("<%= escape_javascript(ratings_for @movie,current_user, :show_user_rating => true) %>");

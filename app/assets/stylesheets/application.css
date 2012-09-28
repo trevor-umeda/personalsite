@@ -114,6 +114,11 @@ img.main_image{
 #movies{
     padding-top:2em;
 }
+#review{
+    border-bottom: 1px solid black;
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+}
 #blog_description{
     padding-bottom: 20px;
     font-size: larger;

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120926082435) do
+ActiveRecord::Schema.define(:version => 20120928075330) do
 
   create_table "blogs", :force => true do |t|
     t.text     "post"
@@ -61,6 +61,14 @@ ActiveRecord::Schema.define(:version => 20120926082435) do
 
   add_index "rates", ["rateable_id", "rateable_type"], :name => "index_rates_on_rateable_id_and_rateable_type"
   add_index "rates", ["rater_id"], :name => "index_rates_on_rater_id"
+
+  create_table "reviews", :force => true do |t|
+    t.text     "description"
+    t.integer  "movie_id"
+    t.integer  "user_id"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
 
   create_table "tags", :force => true do |t|
     t.string   "name"

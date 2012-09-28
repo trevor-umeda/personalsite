@@ -13,6 +13,7 @@ Personalsite::Application.routes.draw do
   resources :questions
   resources :blogs, :except => :index
   resources :tags
+  resources :reviews
   resources :movies do
     member do
       post 'rate'
