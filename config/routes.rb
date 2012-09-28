@@ -13,14 +13,14 @@ Personalsite::Application.routes.draw do
   resources :questions
   resources :blogs, :except => :index
   resources :tags
-  resources :reviews
+  resources :reviews, :except => :index
   resources :movies do
     member do
       post 'rate'
     end
   end
   match '/blog' => "blogs#index"
-
+  match '/reviews' => "movies#index"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

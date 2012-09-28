@@ -19,7 +19,7 @@ class MoviesController < ApplicationController
                 @review.user_id = current_user.id
                 @review.description = @movie.description
             @review.save
-            format.html { redirect_to movies_path }
+            format.html { redirect_to "/reviews" }
 
             format.js
           else
@@ -35,7 +35,7 @@ class MoviesController < ApplicationController
     @movie = Movie.find(params[:id])
     respond_to do |format|
           if @movie.update_attributes(params[:movie])
-            format.html {redirect_to movies_path }
+            format.html {redirect_to "/reviews" }
           else
             format.html
           end

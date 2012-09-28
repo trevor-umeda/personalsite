@@ -1,7 +1,7 @@
 <div id="movies">
- <h2>Reviews on movies by me and my associates</h2>
+ <h2>Reviews on movies or shows by me and my associates</h2>
 <%= render @movies %>
   <% if current_user %>
-    <%= link_to 'Create new Movie', new_movie_path %>
+    <%= link_to 'Create new item', new_movie_path %>
   <% end %>
 </div>

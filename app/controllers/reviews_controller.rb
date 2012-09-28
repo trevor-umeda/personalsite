@@ -8,7 +8,7 @@ class ReviewsController < ApplicationController
     @review.user_id = current_user.id
     respond_to do |format|
       if @review.save
-       format.html{redirect_to movies_path}
+       format.html{redirect_to "/reviews"}
       else
       format.html
       end
