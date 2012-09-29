@@ -1,7 +1,16 @@
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.8/jquery-ui.min.js">
+    $(function() {
+    		$( "#accordion" ).accordion();
+    	});
+</script>
 <div id="movies">
  <h2>Reviews on movies or shows by me and my associates</h2>
-<%= render @movies %>
-  <% if current_user %>
-    <%= link_to 'Create new item', new_movie_path %>
-  <% end %>
+    <div class="demo">
+     <div id="accordion">
+        <%= render @movies %>
+    </div>
+    </div>
+    <% if current_user %>
+        <%= link_to 'Create new item', new_movie_path %>
+    <% end %>
 </div>
