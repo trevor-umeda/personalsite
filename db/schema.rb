@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120928075330) do
+ActiveRecord::Schema.define(:version => 20121026002150) do
 
   create_table "blogs", :force => true do |t|
     t.text     "post"
@@ -43,7 +43,7 @@ ActiveRecord::Schema.define(:version => 20120928075330) do
 
   create_table "questions", :force => true do |t|
     t.string   "question"
-    t.string   "answer"
+    t.text     "answer",     :limit => 255
     t.integer  "project_id"
     t.datetime "created_at"
     t.datetime "updated_at"
