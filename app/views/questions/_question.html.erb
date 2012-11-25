@@ -2,6 +2,7 @@
     <div id="question">
     <b> Question: </b> <%= question.question %> <br/>
     <b> Answer: </b> <%= h(question.answer).gsub(/\n/, '<br/>').html_safe %>
+    <%=  link_to "Edit Answer",{:controller => 'questions',:action =>'clear',:id => question.id} %>
     </div>
    <% elsif current_user %>
    <b> Question: </b> <%= question.question %> <%= question.id %><br/>

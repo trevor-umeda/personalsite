@@ -14,7 +14,23 @@ class QuestionsController < ApplicationController
       end
     end
   end
+  def clear
+    @question = Question.find(params[:id])
+    @question.answer = nil
+    @project = Project.find(@question.project_id)
+    respond_to do |format|
 
+      if @question.save
+           format.html { redirect_to projects_path, notice: 'Answer deleted.' }
+           format.json { render json: @project, status: :created, location: @project }
+           format.js
+         else
+           format.html { render project_path(@project) }
+           format.json { render json: @question.errors, status: :unprocessable_entity }
+           format.js
+         end
+    end
+  end
  def update
     @question = Question.find(params[:id])
     @project = @question.project

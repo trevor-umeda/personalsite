@@ -10,7 +10,12 @@ Personalsite::Application.routes.draw do
   get "questions/create"
 
   resources :projects
-  resources :questions
+  resources :questions do
+    member do
+      get 'clear'
+    end
+  end
+
   resources :blogs, :except => :index
   resources :tags
   resources :reviews, :except => :index
