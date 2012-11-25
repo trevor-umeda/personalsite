@@ -3,8 +3,9 @@
     <b> Question: </b> <%= question.question %> <br/>
     <b> Answer: </b> <%= h(question.answer).gsub(/\n/, '<br/>').html_safe %>
     <%=  link_to "Edit Answer",{:controller => 'questions',:action =>'clear',:id => question.id} %>
-    </br>
+
     </div>
+    <br/>
    <% elsif current_user %>
    <b> Question: </b> <%= question.question %> <%= question.id %><br/>
     <%= link_to 'Destroy', question, confirm: 'Are you sure?', method: :delete %> </br>
