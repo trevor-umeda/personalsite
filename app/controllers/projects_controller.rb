@@ -4,6 +4,7 @@ class ProjectsController < ApplicationController
   def index
     @projects = Project.all
     @question = Question.new
+    @project_types  = @projects.group_by{|project| project.language }
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @projects }

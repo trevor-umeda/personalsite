@@ -105,6 +105,9 @@ line-height:26px;
 #projects h1{
     margin-left: 10em;
 }
+.language_project{
+    height:120px;
+}
 #project_name p{
     font-size: large;
 }

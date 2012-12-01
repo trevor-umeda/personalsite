@@ -1,7 +1,10 @@
 
 <div id="projects">
   <h1>Listing projects</h1>
-  <% @projects.in_groups_of(1,false) do |row_project| %>
+  <% @project_types.each do |language, project_list| %>
+  <h2><%= language %></h2>
+      <div class="language_project">
+  <% project_list.in_groups_of(1,false) do |row_project| %>
       <% for project in row_project %>
           <div id=<%= project.id %> class="reveal-modal">
             <%= render project %>
@@ -30,6 +33,8 @@
           </ul>
 
       <% end %>
+  <% end %>
+  </div>
   <% end %>
   <br />
 
