@@ -84,7 +84,7 @@ line-height:26px;
 }
 
 #int-site{
-  	padding:0 240px;
+  	padding:0 190px;
     background: url("sitebg.jpg") top repeat-y;
     background-size: 100%;
 
@@ -129,19 +129,30 @@ img.main_image{
     padding-top: 20px;
 }
 #blog{
-    border-bottom: 1px solid;
+    border: 1px solid;
     border-bottom-color: black;
     padding-bottom: 10px;
     margin-bottom: 15px;
 }
+#blog_header{
+    background-color: black;
+    color:white;
+}
 #blog_title{
     font-size: larger;
     font-weight: bolder;
+    padding-left: 5px;
 }
 #blog_date{
     float: right;
+    padding-right: 5px;
+
 }
-#blog_post{
+#blog_content{
+   padding-right: 5px;
+   padding-left: 5px;
+}
+#created_blog_post{
     padding-top: .5em;
     padding-bottom: 1em;
 }
