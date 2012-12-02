@@ -12,13 +12,13 @@ html {
 margin:0;
 padding:0;
 
-background: #000;
+background: #FFFFFF;
 height: 1000px;
 
 
 }
 body {
-    background-color: #000;
+    background-color: #ffffff;
     padding-bottom: 20px;
 
 }
@@ -26,7 +26,7 @@ body {
     width: 900px;
     margin:0 auto;
     background-size: 100%;
-    background: #000;
+    background: #FFF;
 }
 #navbar, #int-site{
 margin:0 auto;
@@ -85,7 +85,6 @@ line-height:26px;
 
 #int-site{
   	padding:0 190px;
-    background: url("sitebg.jpg") top repeat-y;
     background-size: 100%;
 
 }
