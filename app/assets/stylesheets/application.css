@@ -12,14 +12,18 @@ html {
 margin:0;
 padding:0;
 
-background: #FFFFFF;
+background: url("sitebg.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 height: 1000px;
 
 
 }
 body {
-   // background: url("sitebg.jpg") top repeat-y;
-    background:black;
+
+    //background:black;
     padding-bottom: 20px;
 
 }
@@ -27,7 +31,9 @@ body {
     width: 900px;
     margin:0 auto;
     background-size: 100%;
-    background: #FFF;
+    background: #ECE88B;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
 }
 #navbar, #int-site{
 margin:0 auto;
@@ -35,24 +41,26 @@ margin:0 auto;
 /*------------------*/
 /* LOGO */
 #logo{
-    height:150px;
-
+    height:250px;
+    background: url("siteheader2.png") no-repeat;
+        background-size: 100%;
 }
 #header{
-    background: url("siteheader.jpg") no-repeat;
     background-size: 100%;
 }
 #logo p{
-    color:#FFFFFF;
     font-size: 30px;
     font-weight:bold;
     margin-left:20px;
     padding-top: 20px;
     text-decoration:none;
+
+
 }
 /*------------------*/
 /* Nav Bar */
 #navbar{
+padding-top: 5px;
 height:26px;
 line-height:26px;
 }
@@ -65,7 +73,7 @@ line-height:26px;
     float: right;
     color:#000;
     font-weight:bold;
-    margin-right:20px;
+    margin-right:40px;
     text-decoration:none;
 }
 #navbar a:hover{
