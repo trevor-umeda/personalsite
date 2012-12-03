@@ -101,10 +101,11 @@ line-height:26px;
     margin:0 0 -10px 0;
 
     float:right;
-    width:125px;
+
 }
 #contact_info{
-
+    width:150px;
+text-align: center;
     -moz-border-radius: 15px;
        border-radius: 15px;
     border: 1px solid darkgray;
