@@ -31,7 +31,7 @@ body {
     width: 900px;
     margin:0 auto;
     background-size: 100%;
-    background: #ECE88B;
+    background: #FFF;
     -moz-border-radius: 15px;
     border-radius: 15px;
 }
@@ -41,7 +41,9 @@ margin:0 auto;
 /*------------------*/
 /* LOGO */
 #logo{
-    height:250px;
+    height:200px;
+    width:900px;
+    margin:0 auto;
     background: url("siteheader2.png") no-repeat;
         background-size: 100%;
 }
