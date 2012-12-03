@@ -21,17 +21,24 @@
   <div id ="left_column">
     <% if @tags %>
         <div id="blog_tags">
-
-        Tags: </br>
-    <%= render @tags  %>
+            Tags: </br>
+            <%= render @tags  %>
         </div>
-      <% end %>
-
-
+    <% end %>
   </div>
+  <div id="right_column">
+
+      <div id="contact_info">
+        Find me at:
+        <br/>
+            <a href="http://www.facebook.com/trevor.umeda"> <img src="/assets/facebook.png"/></a>
+            <a href="http://www.linkedin.com/profile/view?id=172930889&trk=tab_pro"> <img src="/assets/linkedin.png"/></a>
+            <a href="http://www.deviantart.com/FroggyP"> <img src="/assets/deviantart.png"/></a>
+
+      </div>
+    </div>
   <div id="int-site">
     <%= yield %>
-
   </div>
 
 </div>
