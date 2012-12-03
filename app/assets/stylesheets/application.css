@@ -18,7 +18,8 @@ height: 1000px;
 
 }
 body {
-    background-color: #ffffff;
+   // background: url("sitebg.jpg") top repeat-y;
+    background:black;
     padding-bottom: 20px;
 
 }
@@ -86,12 +87,12 @@ line-height:26px;
 #int-site{
   	padding:0 190px;
     background-size: 100%;
-
+    background: #FFF;
 }
 
 #footer {
-    background: url("sitebg.jpg") top repeat-y;
-        background-size: 100%;
+//    background: url("sitebg.jpg") top repeat-y;
+    background-size: 100%;
     padding-top: 50px;
 
 }
