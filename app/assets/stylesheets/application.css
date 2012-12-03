@@ -90,10 +90,15 @@ line-height:26px;
     top:-10px;
     float:left;
     width:220px;  /* for IE5/WIN */
-    width:200px; /* actual value */
+    width:190px; /* actual value */
     margin:0 0 -10px 0;
     padding:10px;
     z-index:100;
+}
+#main_column{
+    float:right;
+
+
 }
 #right_column{
     top:-10px;
@@ -103,30 +108,35 @@ line-height:26px;
     float:right;
 
 }
-#contact_info{
-    width:150px;
-text-align: center;
+.side_box{
     -moz-border-radius: 15px;
-       border-radius: 15px;
-    border: 1px solid darkgray;
-    background:#E4E6E0;
-    box-shadow:1px 1px 2px #888;
+           border-radius: 15px;
+        border: 1px solid darkgray;
+        background:#E4E6E0;
+        box-shadow:1px 1px 2px #888;
+}
+#contact_info{
+    margin-top: 20px;
+    width:150px;
+    text-align: center;
+
     padding: 10px 5px 5px 5px;
     font-size: 15px;
     font-weight: bold;
 }
 
 #int-site{
-  	padding:0 190px;
+    float:left;
     background-size: 100%;
     background: #FFF;
+    width:500px
 }
 
 #footer {
 //    background: url("sitebg.jpg") top repeat-y;
     background-size: 100%;
     padding-top: 50px;
-
+    clear:both;
 }
 #projects{
  padding-top: 2em;

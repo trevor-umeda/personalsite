@@ -125,6 +125,9 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/images/2/medium/maproblem.jpg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/images/2/original/maproblem.jpg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/images/2/thumb/maproblem.jpg" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/blogs/index.js.erb" afterPath="$PROJECT_DIR$/app/views/blogs/index.js.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
     </list>
     <ignored path="personalsite.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -155,10 +158,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="79" selection-start="957" selection-end="957" vertical-scroll-proportion="0.5371622">
+            <state line="32" column="102" selection-start="674" selection-end="674" vertical-scroll-proportion="-9.208333">
               <folding />
             </state>
           </provider>
@@ -167,7 +170,34 @@
       <file leaf-file-name="application.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="114" column="102" selection-start="2111" selection-end="2111" vertical-scroll-proportion="-7.5">
+            <state line="92" column="12" selection-start="1683" selection-end="1683" vertical-scroll-proportion="-4.0384617">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="update.js.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/tags/update.js.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="72" selection-start="72" selection-end="72" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/blogs/index.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="6" selection-start="555" selection-end="555" vertical-scroll-proportion="-15.625">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/blogs/index.js.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="33" selection-start="271" selection-end="271" vertical-scroll-proportion="0.09375">
               <folding />
             </state>
           </provider>
@@ -207,7 +237,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/movies/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/movies/_movie.html.erb" />
         <option value="$PROJECT_DIR$/db/migrate/20121026002150_change_answer_in_blogs.rb" />
         <option value="$PROJECT_DIR$/app/views/projects/_project.erb" />
@@ -223,6 +252,7 @@
         <option value="$PROJECT_DIR$/app/views/tags/update.js.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
+        <option value="$PROJECT_DIR$/app/views/blogs/index.js.erb" />
       </list>
     </option>
   </component>
@@ -467,22 +497,12 @@
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="personalsite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="personalsite" />
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
+              <option name="myItemId" value="blogs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -499,12 +519,22 @@
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
+              <option name="myItemId" value="personalsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="personalsite" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1001,20 +1031,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/blogs/index.js.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="50" selection-start="344" selection-end="344" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/blogs/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="6" selection-start="555" selection-end="555" vertical-scroll-proportion="1.2135923">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/blogs_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="0" selection-start="63" selection-end="63" vertical-scroll-proportion="0.0" />
@@ -1023,13 +1039,6 @@
     <entry file="file://$PROJECT_DIR$/app/views/projects/_project.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="32" selection-start="167" selection-end="167" vertical-scroll-proportion="-6.25">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/tags/update.js.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="72" selection-start="72" selection-end="72" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1053,16 +1062,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="114" column="102" selection-start="2111" selection-end="2111" vertical-scroll-proportion="-7.5">
+        <state line="32" column="102" selection-start="674" selection-end="674" vertical-scroll-proportion="-9.208333">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="79" selection-start="957" selection-end="957" vertical-scroll-proportion="0.5371622">
+        <state line="92" column="12" selection-start="1683" selection-end="1683" vertical-scroll-proportion="-4.0384617">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/tags/update.js.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="72" selection-start="72" selection-end="72" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/blogs/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="6" selection-start="555" selection-end="555" vertical-scroll-proportion="-15.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/blogs/index.js.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="33" selection-start="271" selection-end="271" vertical-scroll-proportion="0.09375">
           <folding />
         </state>
       </provider>
