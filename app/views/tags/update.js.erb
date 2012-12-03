@@ -1,1 +1,1 @@
-$("#blog_description").html("<%= @tag.description %>");
+$("#blog_description").html("<h2><%= escape_javascript(@tag.description) %><h2>");
