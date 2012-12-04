@@ -1,2 +1,3 @@
 var projectId = <%= @project.id %>
 $("#questions_"+projectId).html("<%= escape_javascript(render @project.questions) %>");
+$(".questions_"+projectId+"_question #question_question").val("");

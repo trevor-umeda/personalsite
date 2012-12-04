@@ -42,8 +42,8 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
+      <% div_class = "questions_#{project.id}_question" -%>
+  <div class="<%= div_class -%>">
     <%= f.label :question %><br />
     <%= f.text_area :question, :rows => 2 %>
   </div>

@@ -13,7 +13,7 @@ class BlogsController < ApplicationController
     else
       @tag = Tag.find_by_name("Life")
       if @tag
-        @blogs = @tag.blogs.order(:created_at)
+        @blogs = Blog.all
         @blogs.sort!{|a,b| b.created_at <=> a.created_at}
         @blog.tag_id = @tag.id
       else

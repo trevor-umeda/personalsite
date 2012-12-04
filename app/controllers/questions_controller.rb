@@ -6,7 +6,7 @@ class QuestionsController < ApplicationController
       if @question.save
         format.html { redirect_to @project, notice: 'Question Successfully Posted.' }
         format.json { render json: @project, status: :created, location: @project }
-        format.js
+        format.js   { notice:'Question successfully Posted'}
       else
         format.html { render project_path(@project) }
         format.json { render json: @question.errors, status: :unprocessable_entity }

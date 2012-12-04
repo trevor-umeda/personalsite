@@ -1,5 +1,7 @@
 <div id ="blog_description">
-<h2>   <%= @tag.description %></h2>
+  <% if @tag %>
+    <h2>   <%= @tag.description %></h2>
+  <% end %>
 </div>
 <% if admin? %>
 
