@@ -4,9 +4,9 @@ class QuestionsController < ApplicationController
     @project = Project.find(@question.project_id)
     respond_to do |format|
       if @question.save
-        format.html { redirect_to @project, notice: 'Question Successfully Posted.' }
+        format.html { redirect_to projects_path, notice: 'Question Successfully Posted.' }
         format.json { render json: @project, status: :created, location: @project }
-        format.js   { notice:'Question successfully Posted'}
+        format.js
       else
         format.html { render project_path(@project) }
         format.json { render json: @question.errors, status: :unprocessable_entity }
