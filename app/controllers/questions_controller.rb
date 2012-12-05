@@ -36,7 +36,7 @@ class QuestionsController < ApplicationController
     @project = @question.project
     respond_to do |format|
       if @question.update_attributes(params[:question])
-        format.html { redirect_to @project, notice: 'Question answered.' }
+        format.html { redirect_to projects_path, notice: 'Question answered.' }
         format.json { head :ok }
       else
         format.html { render action: "edit" }
