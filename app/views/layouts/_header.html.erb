@@ -9,7 +9,11 @@
   <% end %>
   <%= link_to "About", about_path %>
   <%= link_to "Reviews","/reviews" %>
-  <%= link_to "Portfolio", projects_path %>
+   <% if current_user %>
+        <%= link_to unanswered_questions, projects_path %>
+        <% else %>
+    <%= link_to "Portfolio", projects_path %>
+    <% end %>
   <%= link_to "Blog", '/blog' %>
 </ul>
 </div>

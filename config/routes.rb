@@ -26,6 +26,7 @@ Personalsite::Application.routes.draw do
   end
   match '/blog' => "blogs#index"
   match '/reviews' => "movies#index"
+  match '/users/sign_up' => "blogs#index"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
