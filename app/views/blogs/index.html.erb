@@ -10,12 +10,14 @@
 </div>
 <%= link_to "New Post", "#new_link_anchor" %>
 <% end %>
+
 <div id="pagination">
-  <%= will_paginate @tag.blogs.paginated(params[:page]) %>
+  <%= will_paginate @blogs.paginated(params[:page]) %>
 </div>
 <div id="blog_list">
-  <%= render :partial => "blogs/blog" , :collection => @tag.blogs.paginated(params[:page]) %>
+  <%= render :partial => "blogs/blog" , :collection => @blogs.paginated(params[:page]) %>
 </div>
+<%=  @tag.blogs.paginated(params[:page]).to_a %>
 <br>
 <% if admin? %>
     <a name="new_link_anchor"></a> </br>

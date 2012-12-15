@@ -11,14 +11,10 @@ class BlogsController < ApplicationController
         #@blogs.paginate(:page => 5, :per_page => 5)
         @blog.tag_id = @tag.id
     else
-      @tag = Tag.find_by_name("Life")
-      if @tag
-        @blogs = Blog.all
-        @blogs.sort!{|a,b| b.created_at <=> a.created_at}
-        @blog.tag_id = @tag.id
-      else
-        @blogs = Blog.all
-      end
+      @tag = Tag.new(:name => "Life")
+      @tag.blogs = Blog.where("id IS NOT null")
+        @blogs = Blog.where("id IS NOT null")
+
 
     end
 
