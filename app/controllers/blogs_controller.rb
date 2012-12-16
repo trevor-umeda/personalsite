@@ -36,7 +36,7 @@ class BlogsController < ApplicationController
      respond_to do |format|
       if @blog.save
         @tag_id = @blog.tag_id
-        format.html { redirect_to :controller => "blogs",:action=>"index",:tag => @tag_id }
+        format.html { redirect_to :controller => "blogs",:action=>"index"}
         format.json { render json: @blog, status: :created, location: @blog }
         format.js
       else
